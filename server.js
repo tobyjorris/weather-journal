@@ -21,6 +21,7 @@ app.get('/returnData', (req, res) => res.send(projectData))
 app.post('/addData', addData);
 
 function addData (req, res) {
+    console.log(req);
     projectData = {
         temp: req.body.temp,
         date: req.body.date,
