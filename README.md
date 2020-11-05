@@ -1,11 +1,15 @@
 # Weather-Journal App Project
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This is a demo project that uses the OpenWeatherMap API to allow users to enter a date, location, and their feelings to output a dynamic 'journal entry'. The call to OpenWeatherMap is made from the client side, and uses a chain of promises to get the weather data, convert Kelvin to Fahrenheit, send the data to the server (where it's being held in a mock variable), return the data back from the server, and then use that returned data to update the UI. This is all done in a single thread, mocking a live database/server environment.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Environment Variables
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
-"# weather-journal" 
+To correctly install your own environment variable, follow these steps:
+
+- create a `.env` file in the root directory
+- create this entry:
+
+``` javascript
+weatherAPIKey=<yourkey> 
+```
+
